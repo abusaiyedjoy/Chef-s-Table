@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/Gt9k2nh/pexels-shameel-mukkath-5640045.jpg",
+      "name": "Pasta Carbonara",
+      "description": "Classic Italian pasta dish with creamy sauce, bacon, and cheese.",
+      "ingredients": ["Spaghetti", "Eggs", "Bacon", "Parmesan Cheese", "Garlic", "Black Pepper"],
+      "preparing_time": "30 minutes",
+      "calories": "450 calories"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/qpHmc8L/grilled-chicken-pieces-with-tomatoes-carrots-fried-peppers-red-onion-cucumber-mint.jpg",
+      "name": "Grilled Salmon with Vegetables",
+      "description": "Delicious grilled salmon fillet served with roasted vegetables.",
+      "ingredients": ["Salmon Fillet", "Asparagus", "Bell Peppers", "Zucchini", "Olive Oil", "Lemon"],
+      "preparing_time": "25 minutes",
+      "calories": "380 calories"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/L0Zj2Gc/pexels-cats-coming-406152.jpg",
+      "name": "Caprese Salad",
+      "description": "A refreshing salad made with fresh tomatoes, mozzarella cheese, and basil.",
+      "ingredients": ["Tomatoes", "Fresh Mozzarella", "Basil Leaves", "Extra Virgin Olive Oil", "Balsamic Vinegar"],
+      "preparing_time": "15 minutes",
+      "calories": "250 calories"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/y5Yf7sy/top-view-cooked-vegetable-meal-with-meat-fresh-sliced-bell-pepper-wooden-brown-desk.jpg",
+      "name": "Chicken Stir-Fry",
+      "description": "Healthy and flavorful chicken stir-fry with mixed vegetables.",
+      "ingredients": ["Chicken Breast", "Broccoli", "Carrots", "Bell Peppers", "Soy Sauce", "Ginger", "Garlic"],
+      "preparing_time": "20 minutes",
+      "calories": "320 calories"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/y0qxNYC/margharita-pizza-with-full-tomato-sauce-andgreen-basilica-leaves-per-slice.jpg",
+      "name": "Margherita Pizza",
+      "description": "Classic Italian pizza topped with fresh tomatoes, mozzarella, and basil.",
+      "ingredients": ["Pizza Dough", "Tomatoes", "Fresh Mozzarella", "Basil Leaves", "Tomato Sauce"],
+      "preparing_time": "35 minutes",
+      "calories": "400 calories"
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/wwnT5m5/vinitha-v-a-Apxupr-XL-4-unsplash.jpg",
+      "name": "Vegetable Soup",
+      "description": "Hearty vegetable soup made with a variety of fresh vegetables and herbs.",
+      "ingredients": ["Carrots", "Potatoes", "Onions", "Celery", "Tomatoes", "Vegetable Broth"],
+      "preparing_time": "40 minutes",
+      "calories": "180 calories"
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/GckSkcT/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table.jpg",
+      "name": "Shrimp Pasta",
+      "description": "Delicious pasta dish with succulent shrimp and garlic butter sauce.",
+      "ingredients": ["Shrimp", "Linguine", "Butter", "Garlic", "Parmesan Cheese", "Parsley"],
+      "preparing_time": "20 minutes",
+      "calories": "380 calories"
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/YpTHj0S/yu-jinyang-h-WQv-Za-N7jn-Q-unsplash.jpg",
+      "name": "Chocolate Cake",
+      "description": "Decadent chocolate cake with rich chocolate frosting, perfect for any occasion.",
+      "ingredients": ["Flour", "Sugar", "Cocoa Powder", "Eggs", "Butter", "Milk"],
+      "preparing_time": "50 minutes",
+      "calories": "350 calories"
+    }
+  ]
+  

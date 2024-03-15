@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <h1 className='text-2xl font-bold'>React Chefs Table</h1>
+      <h1 className='text-2xl font-bold'>Recipe Calories</h1>
     </>
   )
 }
