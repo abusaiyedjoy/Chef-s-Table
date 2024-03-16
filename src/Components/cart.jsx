@@ -14,9 +14,7 @@ const cart = () => {
                     </th>
                     <tbody className="w-full flex">
                         <tr className="flex justify-evenly w-full">
-                            <td>fgh</td>
-                            <td>fgdh</td>
-                            <td>dfh</td>
+                            
 
                         </tr>
                         <button className="btn text-lg rounded-full p-2 bg-indigo-400 ">Preparing</button>
