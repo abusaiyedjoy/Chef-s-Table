@@ -1,5 +1,7 @@
 import Banner from './Components/banner'
 import Recipies from './Components/recipies'
+
+import Cart from './Components/cart'
 import './App.css'
 
 function App() {
@@ -7,26 +9,47 @@ function App() {
   return (
     <>
       <div className='flex justify-between items-center my-4 container mx-auto'>
-      <h1 className='text-3xl font-bold'>Recipe Calories</h1>
-      <ul className='flex justify-between items-center text-xl gap-6 font-medium'>
-        <li>Home</li>
-        <li>Recipes</li>
-        <li>About</li>
-        <li>Search</li>
-      </ul>
-      <div className='w-[200px] bg-gray-100 py-2 px-4 rounded-full'>
-        <input className='bg-transparent' type="text" placeholder='Search' />
-      </div>
+        <h1 className='text-3xl font-bold'>Recipe Calories</h1>
+        <ul className='flex justify-between items-center text-gray-500 text-lg gap-6 font-medium'>
+          <li>Home</li>
+          <li>Recipes</li>
+          <li>About</li>
+          <li>Search</li>
+        </ul>
+        <div className='flex justify-center items-center gap-4'>
+        <div className='w-[250px] gap-2 flex bg-gray-100 py-2 pl-3 rounded-full'>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 text-gray-400 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+
+          <input className='bg-transparent' type="text" placeholder='Search' />
+        </div>
+        <div className='p-2 bg-green-400 rounded-full'>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+          </svg>
+        </div>
+
+        </div>
       </div>
       {/* Banner Section */}
       <Banner></Banner>
       {/* Our Recipies Section */}
       <dir className="container mx-auto text-center my-10">
         <h1 className='text-4xl font-bold'>Our recipes</h1>
-        <p className='text-lg my-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nihil numquam ratione impedit molestiae, <br /> vero officiis itaque provident dolore molestias!</p>
+        <p className='text-lg my-4'>Explore culinary wonders with our diverse array of recipes, from simple delights <br /> to gourmet creations, inspiring your cooking adventures.</p>
       </dir>
       {/* Recipes Items */}
-      <Recipies></Recipies>
+      <div className="container mx-auto grid grid-cols-12 gap-6">
+        <div className="col-span-8">
+          <Recipies></Recipies>
+        </div>
+
+        {/* Add to cart */}
+        <div className="col-span-4">
+          <Cart></Cart>
+        </div>
+      </div>
     </>
   )
 }

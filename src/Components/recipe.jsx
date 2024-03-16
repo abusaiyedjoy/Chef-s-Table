@@ -1,31 +1,35 @@
 
 const recipe = (recipe) => {
-    console.log(recipe)
-    const {name,image,description,preparing_time,calories}=recipe.recipe;
+    const { name, image, description, preparing_time, calories, ingredients } = recipe.recipe;
     return (
         <div>
-            <div className="rounded-xl text-black shadow-xl">
-                <figure className="px-4 pt-6">
-                    <img src={image} alt={name} className="rounded-xl" />
+            <div className="rounded-xl text-black border-2 shadow-xl">
+                <figure className="p-4">
+                    <img src={image} alt={name} className="rounded-xl h-[196px] w-full object-center" />
                 </figure>
                 <div className="card-body text-start px-4">
                     <h2 className="text-xl font-bold">{name}</h2>
                     <p>{description}</p>
+                    <hr className="my-2" />
+                    <h1 className="text-xl font-bold">Ingredients: {ingredients.length}</h1>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <hr className="my-2" />
                     <div className="flex justify-between">
-                        <div className="flex gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Price:{preparing_time}
-                        </div>
-                        <div className="flex gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
-                            </svg>  
-                            Credit:{calories}                        
-                        </div>
+                        <h1 className="flex justify-center item-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+
+                            {preparing_time}</h1>
+                        <h1 className="flex justify-center item-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
+                        </svg>
+                            {calories}</h1>
                     </div>
-                    <button className="btn btn-info text-white text-2xl font-medium w-full">Select</button>
+                    <button className="btn btn-info text-white mt-2 w-[70%] mx-auto text-2xl font-medium">Want to cook</button>
 
                 </div>
             </div>

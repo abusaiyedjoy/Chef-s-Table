@@ -3,16 +3,16 @@ import { useEffect } from "react";
 import Recipe from './recipe'
 
 const recipies = () => {
-    const [recipe,setRecipe] =useState([]);
+    const [recipe,setRecipe] = useState([]);
     useEffect(()=>{
-        fetch('recipes.json')
-        .then(res=>res.json())
+        fetch('recipes.json'),
+        .then(res=>res.json()),
         .then(data=>setRecipe(data))
     },[])
-    console.log(recipe)
     return (
-        <div>
-            {
+        <div className="grid grid-cols-2 gap-4">
+           
+           {
                 recipe.map(recipe=>(
                     <Recipe key={recipe.id} recipe={recipe}></Recipe>
                 ))
