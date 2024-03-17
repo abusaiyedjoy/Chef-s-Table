@@ -6,6 +6,7 @@ import './App.css'
 
 function App() {
   const [item,setItem]= useState([]);
+  const [cook,setCook]= useState([]);
   const cartItem=(select)=>{
     const isExist = item.find(card=>card.id==select.id);
     if(!isExist){
@@ -14,6 +15,16 @@ function App() {
       alert("Already exist")
     }
   }
+  const handleDelete=(id,food)=>{
+    const exit =item.filter(card=>card.id!=id)
+    setItem(exit)
+    recipeCooking(food)
+  }
+  const recipeCooking=(food)=>{
+    cook.find(card=>card.id==food.id);
+     setCook([...cook, food])
+  }   
+  
 
   return (
     <>
@@ -57,7 +68,7 @@ function App() {
 
         {/* Add to cart */}
         <div className="col-span-5">
-          <Cart item={item}></Cart>
+          <Cart cook={cook} handleDelete={handleDelete} item={item}></Cart>
         </div>
       </div>
     </>
