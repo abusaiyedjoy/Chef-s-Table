@@ -1,9 +1,12 @@
 
-const ingredients = ({item}) => {
+const ingredients = ({items}) => {
+    console.log(items)
     return (
-        <ul>
-            <li>{item}</li>
-        </ul>
+        
+            <li className="list-disc">
+                {items}
+            </li>
+        
     );
 };
 

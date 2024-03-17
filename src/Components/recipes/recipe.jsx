@@ -13,13 +13,15 @@ const recipe = ({recipe,cartItem}) => {
                     <p>{description}</p>
                     <hr className="my-2" />
                     <h1 className="text-xl font-bold">Ingredients: {ingredients.length}</h1>
-                    <ul><li className="grid grid-cols-2">
+                    <ul className="grid grid-cols-2 px-6 gap-x-6">
                         {
-                            ingredients.map(item => (
-                                <Ingredients key={recipe.id} item={item} ></Ingredients>
+                            ingredients.map(items => (
+                                <Ingredients key={recipe.id} items={items} ></Ingredients>
+                                
                             ))
                         }
-                    </li></ul>
+                    </ul>
+                    
                     <hr className="my-2" />
                     <div className="flex justify-between">
                         <h1 className="flex justify-center item-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -35,6 +37,7 @@ const recipe = ({recipe,cartItem}) => {
                     <button onClick={()=>cartItem(recipe)} className="btn bg-green-500 rounded-full hover:bg-green-500 text-white mt-2 w-[70%] mx-auto text-2xl font-medium">Want to cook</button>
 
                 </div>
+                
             </div>
         </div>
     );

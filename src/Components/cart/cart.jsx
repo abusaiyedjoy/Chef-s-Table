@@ -63,7 +63,7 @@ const cart = ({ item, handleDelete, cook }) => {
                     </tr>
                 </table>
             </div>
-            <div className="flex justify-between items-center text-lg font-medium">
+            <div className="flex justify-between my-2 items-center text-lg font-medium">
                 <h1>Total Time = {totalPreparingTime} min</h1>
                 <h1>Total Calories = {totalCalore} cal</h1>
             </div>

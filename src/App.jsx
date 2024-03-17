@@ -3,6 +3,8 @@ import Recipies from './Components/recipes/recipies'
 import { useState } from 'react'
 import Cart from './Components/cart/cart'
 import './App.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [item,setItem]= useState([]);
@@ -12,8 +14,12 @@ function App() {
     if(!isExist){
       setItem([...item, select])
     }else{
-      alert("Already exist")
+      toast.warning("This recipe already added!",{
+        position: "top-center"
+      });
     }
+    
+
   }
   const handleDelete=(id,food)=>{
     const exit =item.filter(card=>card.id!=id)
@@ -70,6 +76,7 @@ function App() {
         <div className="col-span-5">
           <Cart cook={cook} handleDelete={handleDelete} item={item}></Cart>
         </div>
+        <ToastContainer />
       </div>
     </>
   )
