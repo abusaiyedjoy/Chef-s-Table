@@ -16,22 +16,22 @@ const cart = ({ item, handleDelete, cook }) => {
             <div className="flex bg-gray-100 p-4 rounded-xl w-full">
                 <table className="w-full">
                     <tr className="flex justify-between items-start w-full">
-                        <th className="w-[30px] text-start"></th>
-                        <th className="w-[100px] text-start">Name</th>
-                        <th className="w-[75px] text-start">Time</th>
-                        <th className="w-[90px] text-start">Calories</th>
-                        <th className="w-[100px] text-start"></th>
+                        <th className="w-[20px] md:w-[30px] text-start"></th>
+                        <th className="w-[90px] md:w-[100px] text-start">Name</th>
+                        <th className="w-[65px] md:w-[75px] text-start">Time</th>
+                        <th className="w-[80px] md:w-[90px] text-start">Calories</th>
+                        <th className="w-[90px] md:w-[100px] text-start"></th>
                     </tr>
                     <tr className="w-full">
                         {
                             item.map((food, index) => (
-                                <tr key={food.id} className="flex justify-evenly items-start w-full">
-                                    <td className="w-[30px] text-start">{index + 1}</td>
-                                    <td className="w-[100px] text-start">{food.name.slice(0, 14)}</td>
-                                    <td className="w-[75px] text-start">{food.preparing_time.slice(0, 6)}</td>
-                                    <td className="w-[90px] text-start">{food.calories.slice(0, 7)}</td>
-                                    <td className="w-[100px] text-start">
-                                        <button onClick={() => handleDelete(food.id, food)} className="btn ml-4 rounded-full px-4 text-white bg-green-500 hover:bg-green-500 ">Preparing</button>
+                                <tr key={food.id} className="flex justify-between lg:justify-evenly items-start w-full">
+                                    <td className="w-[20px] md:w-[30px] text-start">{index + 1}</td>
+                                    <td className="w-[90px] md:w-[100px] text-start">{food.name.slice(0, 14)}</td>
+                                    <td className="w-[65px] md:w-[75px] text-start">{food.preparing_time.slice(0, 6)}</td>
+                                    <td className="w-[80px] md:w-[90px] text-start">{food.calories.slice(0, 7)}</td>
+                                    <td className="w-[90px] lg:w-[100px] text-start">
+                                        <button onClick={() => handleDelete(food.id, food)} className="btn rounded-full px-4 text-white bg-green-500 hover:bg-green-500 ">Preparing</button>
                                     </td>
                                 </tr>
                             ))

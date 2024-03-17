@@ -34,9 +34,9 @@ function App() {
 
   return (
     <>
-      <div className='flex justify-between items-center my-4 container mx-auto'>
-        <h1 className='text-3xl font-bold'>Recipe Calories</h1>
-        <ul className='flex justify-between items-center text-gray-500 text-lg gap-6 font-medium'>
+      <div className='flex flex-col md:flex-row justify-between items-center my-4 container mx-auto'>
+        <h1 className='text-3xl cursor-pointer mb-3 font-bold'>Recipe Calories</h1>
+        <ul className='flex justify-between mb-3 items-center text-gray-500 text-lg cursor-pointer gap-6 font-medium'>
           <li>Home</li>
           <li>Recipes</li>
           <li>About</li>
@@ -66,14 +66,14 @@ function App() {
         <p className='text-lg my-4'>Explore culinary wonders with our diverse array of recipes, from simple delights <br /> to gourmet creations, inspiring your cooking adventures.</p>
       </dir>
       {/* Recipes Items */}
-      <div className="container mx-auto grid grid-cols-12 gap-6">
-        <div className="col-span-7">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="md:col-span-7">
         <Recipies cartItem={cartItem}></Recipies>
 
         </div>
 
         {/* Add to cart */}
-        <div className="col-span-5">
+        <div className="w-full lg:col-span-5">
           <Cart cook={cook} handleDelete={handleDelete} item={item}></Cart>
         </div>
         <ToastContainer />
